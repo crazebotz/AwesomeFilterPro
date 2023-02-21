@@ -1,3 +1,7 @@
 build:
-  docker:
-      worker: Dockerfile
+  languages:
+    - python
+  buildpacks:
+    - heroku/python
+  scripts:
+    - python bot.py
